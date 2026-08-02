@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LLM Evaluator</string>
+    <string name="prompt_hint">Enter prompt...</string>
+    <string name="reference_hint">Enter reference text...</string>
+    <string name="btn_evaluate">Evaluate</string>
+    <string name="btn_compare">Compare Models</string>
+</resources>

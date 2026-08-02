@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etFragPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter evaluation prompt..." />
+
+        <EditText
+            android:id="@+id/etFragReference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter ground truth reference..."
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnFragCompare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compare Models"
+            android:layout_marginTop="12dp" />
+
+        <!-- Model A -->
+        <TextView
+            android:id="@+id/tvFragModelA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model A"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <ProgressBar
+            android:id="@+id/pbFragA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFragResponseA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:padding="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFragMetricsA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <!-- Model B -->
+        <TextView
+            android:id="@+id/tvFragModelB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model B"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <ProgressBar
+            android:id="@+id/pbFragB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFragResponseB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:padding="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFragMetricsB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+</ScrollView>
